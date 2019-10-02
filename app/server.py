@@ -12,7 +12,7 @@ from starlette.staticfiles import StaticFiles
 export_file_url = 'https://www.dropbox.com/s/c4sybmizogh27j5/export.pkl?raw=1'
 export_file_name = 'export.pkl'
 
-classes = ['Ragdoll', 'BritishShorthair', 'Persian', 'Birman', 'RussianBlue', 'MaineCoon', 'EgyptianMau', 'Bengal', 'Sphynx', 'Bombay', 'Abyssinian', 'Siamese'} {'pomeranian', 'chihuahua', 'miniaturepinscher', 'havanese', 'keeshond', 'samoyed', 'boxer', 'bassethound', 'beagle', 'americanbulldog', 'greatpyrenees', 'staffordshirebullterrier', 'saintbernard', 'wheatenterrier', 'newfoundland', 'englishsetter', 'leonberger', 'englishcockerspaniel', 'japanesechin', 'shibainu', 'germanshorthaired', 'americanpitbullterrier', 'pug', 'yorkshireterrier', 'scottishterrier']
+classes = ['Ragdoll', 'BritishShorthair', 'Persian', 'Birman', 'RussianBlue', 'MaineCoon', 'EgyptianMau', 'Bengal', 'Sphynx', 'Bombay', 'Abyssinian', 'Siamese','pomeranian', 'chihuahua', 'miniaturepinscher', 'havanese', 'keeshond', 'samoyed', 'boxer', 'bassethound', 'beagle', 'americanbulldog', 'greatpyrenees', 'staffordshirebullterrier', 'saintbernard', 'wheatenterrier', 'newfoundland', 'englishsetter', 'leonberger', 'englishcockerspaniel', 'japanesechin', 'shibainu', 'germanshorthaired', 'americanpitbullterrier', 'pug', 'yorkshireterrier', 'scottishterrier']
 path = Path(__file__).parent
 
 app = Starlette()
