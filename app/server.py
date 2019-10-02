@@ -9,10 +9,10 @@ from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 
-export_file_url = 'https://www.dropbox.com/s/nagdpdd3gsryniw/export.pkl?raw=1'
+export_file_url = 'https://www.dropbox.com/s/c4sybmizogh27j5/export.pkl?raw=1'
 export_file_name = 'export.pkl'
 
-classes = ['Abyssinian', 'Bengal', 'Birman', 'Bombay', 'British', 'Egyptian', 'Maine', 'Persian', 'Ragdoll', 'Russian', 'Siamese', 'Sphynx', 'american', 'basset', 'beagle', 'boxer', 'chihuahua', 'english', 'german', 'great', 'havanese', 'japanese', 'keeshond', 'leonberger', 'miniature', 'newfoundland', 'pomeranian', 'pug', 'saint', 'samoyed', 'scottish', 'shiba', 'staffordshire', 'wheaten', 'yorkshire']
+classes = ['Ragdoll', 'BritishShorthair', 'Persian', 'Birman', 'RussianBlue', 'MaineCoon', 'EgyptianMau', 'Bengal', 'Sphynx', 'Bombay', 'Abyssinian', 'Siamese'} {'pomeranian', 'chihuahua', 'miniaturepinscher', 'havanese', 'keeshond', 'samoyed', 'boxer', 'bassethound', 'beagle', 'americanbulldog', 'greatpyrenees', 'staffordshirebullterrier', 'saintbernard', 'wheatenterrier', 'newfoundland', 'englishsetter', 'leonberger', 'englishcockerspaniel', 'japanesechin', 'shibainu', 'germanshorthaired', 'americanpitbullterrier', 'pug', 'yorkshireterrier', 'scottishterrier']
 path = Path(__file__).parent
 
 app = Starlette()
