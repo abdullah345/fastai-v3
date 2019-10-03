@@ -8,6 +8,7 @@ from starlette.applications import Starlette
 from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
+import numpy as np
 
 export_file_url = 'https://www.dropbox.com/s/c4sybmizogh27j5/export.pkl?raw=1'
 export_file_name = 'export.pkl'
@@ -61,6 +62,13 @@ async def analyze(request):
     img_bytes = await (img_data['file'].read())
     img = open_image(BytesIO(img_bytes))
     prediction = learn.predict(img)[0]
+    score =np.array(learn.predict(img)[2]).max()
+    if (score*100) >50:
+        prediction = learn.predict(img)[0]
+    else:
+        prediction ='Sorry unknown class'
+        
+    
     return JSONResponse({'result': str(prediction)})
 
 
